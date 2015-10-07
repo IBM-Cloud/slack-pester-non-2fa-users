@@ -24,3 +24,4 @@ _testmain.go
 *.prof
 
 app
+slack-disable-2fa

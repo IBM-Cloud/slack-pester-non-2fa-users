@@ -35,7 +35,7 @@ func getJson(url string, target interface{}) error {
 }
 
 func annoyUser(user string) error {
-	var message = "You have been identied as a user that does not have 2 Factor Auth (2FA).\n" +
+	message := "You have been identied as a user that does not have 2 Factor Auth (2FA).\n" +
 		"To you Slack you must have 2FA enabled as per the requirements and terms of use.  You will be reminded every 24 hours until you enabled 2FA.\n" +
 		"Every so often we will disable accounts that do not have 2FA turned on.  To avoid this please turn on 2FA now.  Instructions for 2FA can be found at https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication."
 

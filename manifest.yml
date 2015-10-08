@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512MB
+  instances: 1
+  domain: mybluemix.net
+  name: slack-annoy-users-2fa
+  host: slack-annoy-users-2fa
+  no-route: true
+  disk_quota: 1024M
+  command: slack-disable-2fa
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git

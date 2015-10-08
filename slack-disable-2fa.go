@@ -11,7 +11,7 @@ var apiKey string = ""
 
 func sendMessage(api slack.Client, channel string, message string) error {
 	params := slack.PostMessageParameters{}
-	_, _, err := api.PostMessage(user, message, params)
+	_, _, err := api.PostMessage(channel, message, params)
 	return err
 }
 

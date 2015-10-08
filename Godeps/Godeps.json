@@ -1,5 +1,15 @@
 {
 	"ImportPath": "slack-disable-2fa",
 	"GoVersion": "go1.5.1",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/nlopes/slack",
+			"Comment": "v0.0.1-57-gaaf5585",
+			"Rev": "aaf55856f05a90dac5b934d489d6c3d14e8602a6"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "47990a1ba55743e6ef1affd3a14e5bac8553615d"
+		}
+	]
 }

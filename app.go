@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"time"
 )
 
 var apiKey string = ""
@@ -78,8 +79,12 @@ func main() {
 		os.Exit(-1)
 	}
 
-	if err := getUsers(); err != nil {
-		fmt.Printf("Error getting users and annoying them %s", err)
+	for {
+		if err := getUsers(); err != nil {
+			fmt.Printf("Error getting users and annoying them %s", err)
+		}
+		fmt.Printf("Running again in 24 hours...")
+		time.Sleep(time.Hour * 24)
 	}
 
 }

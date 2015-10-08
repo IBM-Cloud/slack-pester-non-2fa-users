@@ -1,0 +1,5 @@
+{
+	"ImportPath": "slack-disable-2fa",
+	"GoVersion": "go1.5.1",
+	"Deps": []
+}

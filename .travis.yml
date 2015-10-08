@@ -1,3 +1,17 @@
 language: go
 go:
 - '1.5'
+sudo: true
+deploy:
+  edge: true
+  provider:
+    provider: cloudfoundry
+  api: https://api.ng.bluemix.net
+  username:
+    secure: "pO+8kbwmyW/dhgGOi+QycgIj3B68v4EuX14P20bbQ7dR4FZE4hUzOZOOiIafFUAPstIWZuABBR8jut7z+74+MfWSCBGhAnn/OM/pACZ4s0ynaZQzB/EJXC3hfByQzDwDVuMv8u0gTqQgW8p1rXN4WmbNUsI3XP9TLy7qh9PdFXYJcKLRmTA2hjVSJxw4dCbqwckivK9dxipn/h8iP8RA3BTAJogOsbKMRaQoxyNWY8MZOPZ06iYYa19Hd5AxA7WxJ2wn/Adgieh6549T2JS5MjF2uptmPLiarct0i6XR/21Kyp4U0M04+IP4CSulqhdWkSyYD6QNvawUJr3QuQK/XePk4TIc1qe6LSwifGTEnwe2Fs8SwcMYe6qh8wu/KAxQdRHpJsEgCCNQCrxBjxTyyGGmH5O/9upMGuxk8g/UUhwlTzN/AuscMbJjloOsMOWvOLLyY4Czu+tumd1X14rNhsiTYVgpnKIF+9Vowq8Z8PMyVhdkVXEK01mbQAl1KVkM603/LSrWi/7gLAQrcKM5s6WB2qsAxOZpwnB0efhG8Ntv/MDHAmjfhEdffLs8e5KIi3tCJbX5dCGFEJafziCH1P1yu69pPdShCX06lQ4Lv1kHdIBv6lHXF+cEANI8tFUGJP7JmExE/tQFjWoSaD1W83VkHyM47OcCABoNziVYyBM="
+  password:
+    secure: "ZxODJ/GPk7hiCmbdRf+gOFvTFXIzPkPZEyw+DYAaDd06VnYcxrgzqunZLACrdgxo185NZ02w+1VAR6ejGtbEt7OuC1i8TmNuwz8S2uN8B4x4AAjYQm05ZeOD2uEDeA3KhvcaJZS757jxk6zk1GoBGVffM2FEDE+RSPSGUGYDskaufUT5m5Q2BqAkHD+A9XC5hcApPVoSCx1hhMWt5WLL3JX/r/EJZIrEX3DGYqA/wfRcPDaaebECPXCdwgXmYy80bKNqtQClJeeCtBhe2GMftz3krZqr0XFXc4vSkyLmKbvEbu4yup3HFLKz7WkDxxgdki8QtR0BpDW+nty9mHGnyTYSlz5Xw8A9ehWtwJ4kj3GfShomvLqA2gPfJ9rv9WD7TtM2PrN3qrb2zk79SaW4ROestFrfaMsZcflV7unmm/q8PRF3umKJt8FTny+rusFdr0jnvL7hNN7DHQZr1SQl/lc5fB84au/LRcmRDZcv+BLuMFqKJh422z9ovirk5kR1xQBclQ+o/hrZaYNSgErV998eR90ggRwR1a2Nftbq92sLUVC/j4JuyLe5ltsOqu1tv9Mig2rlq8dIJSxKtj1HvYPGiesr20+uUoH/18xcFDrVJax1JUmv/urb8kmUzc+a8jjOGzOegXsx5/eAeL7eUBqfS2y3qntoN6nogs+q6Gg="
+  organization: Dev-Advocates
+  space: prod
+  on:
+    repo: IBM-Bluemix/slack-pester-non-2fa-users

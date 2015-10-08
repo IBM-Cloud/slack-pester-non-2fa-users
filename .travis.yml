@@ -4,8 +4,7 @@ go:
 sudo: true
 deploy:
   edge: true
-  provider:
-    provider: cloudfoundry
+  provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username:
     secure: "pO+8kbwmyW/dhgGOi+QycgIj3B68v4EuX14P20bbQ7dR4FZE4hUzOZOOiIafFUAPstIWZuABBR8jut7z+74+MfWSCBGhAnn/OM/pACZ4s0ynaZQzB/EJXC3hfByQzDwDVuMv8u0gTqQgW8p1rXN4WmbNUsI3XP9TLy7qh9PdFXYJcKLRmTA2hjVSJxw4dCbqwckivK9dxipn/h8iP8RA3BTAJogOsbKMRaQoxyNWY8MZOPZ06iYYa19Hd5AxA7WxJ2wn/Adgieh6549T2JS5MjF2uptmPLiarct0i6XR/21Kyp4U0M04+IP4CSulqhdWkSyYD6QNvawUJr3QuQK/XePk4TIc1qe6LSwifGTEnwe2Fs8SwcMYe6qh8wu/KAxQdRHpJsEgCCNQCrxBjxTyyGGmH5O/9upMGuxk8g/UUhwlTzN/AuscMbJjloOsMOWvOLLyY4Czu+tumd1X14rNhsiTYVgpnKIF+9Vowq8Z8PMyVhdkVXEK01mbQAl1KVkM603/LSrWi/7gLAQrcKM5s6WB2qsAxOZpwnB0efhG8Ntv/MDHAmjfhEdffLs8e5KIi3tCJbX5dCGFEJafziCH1P1yu69pPdShCX06lQ4Lv1kHdIBv6lHXF+cEANI8tFUGJP7JmExE/tQFjWoSaD1W83VkHyM47OcCABoNziVYyBM="

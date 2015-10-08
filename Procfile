@@ -1,1 +1,1 @@
-web: slack-disable-2fa
+worker: slack-disable-2fa

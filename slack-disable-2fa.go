@@ -53,7 +53,7 @@ func main() {
 
 	for {
 		if err := getUsers(*api); err != nil {
-			fmt.Printf("Error getting users and annoying them %s", err)
+			fmt.Printf("Error getting users and annoying them %s\n", err)
 		}
 		fmt.Printf("Running again in 24 hours...")
 		time.Sleep(time.Hour * 24)

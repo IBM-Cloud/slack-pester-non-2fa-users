@@ -29,7 +29,7 @@ func annoyUser(api slack.Client, user string) error {
 func shameUsers(api slack.Client, userString string) error {
 	message := "Hello everyone...\n\n" +
 		"The following users have not enabled 2 Factor auth " + userString + "\n\n" +
-		slackPolicy
+		slackPolicy + "."
 
 	err := sendMessage(api, "#general", message)
 	return err

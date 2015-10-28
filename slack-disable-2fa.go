@@ -11,7 +11,7 @@ var apiKey string = ""
 
 var slackPolicy = "To use Slack you must have 2FA enabled as per the requirements and terms of use.  You will be reminded every 24 hours until you enabled 2FA.\n\n" +
 	"Every so often we will disable accounts that do not have 2FA turned on.  To avoid this please turn on 2FA now.  Instructions for 2FA can be found at https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication.\n\n" +
-	"You can turn on 2FA at https://cloudplatform.slack.com/account/".
+	"You can turn on 2FA at https://cloudplatform.slack.com/account/"
 
 func sendMessage(api slack.Client, channel string, message string) error {
 	params := slack.PostMessageParameters{}

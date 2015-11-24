@@ -9,5 +9,3 @@ applications:
   disk_quota: 1024M
   command: slack-disable-2fa
   buildpack: https://github.com/cloudfoundry/go-buildpack.git
-  services:
-  - slack-annoy-users-2fa-logs

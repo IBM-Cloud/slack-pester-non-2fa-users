@@ -44,7 +44,7 @@ func getUsers(api slack.Client) error {
 	var userList = ""
 
 	for _, member := range users {
-		if member.Has2FA == false && member.Deleted == false && member.IsBot == false {
+		if member.Has2FA == false && member.Deleted == false && member.IsBot == false && member.IsRestricted == false && member.IsUltraRestricted == false {
 			if err := annoyUser(api, member.Name); err != nil {
 				return err
 			}
